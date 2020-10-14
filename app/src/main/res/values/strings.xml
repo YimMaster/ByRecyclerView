@@ -1,7 +1,7 @@
 <resources>
 
-    <string name="app_launcher">ByRV</string>
-    <string name="app_name">ByRecyclerView</string>
+    <string name="app_launcher">Forms</string>
+    <string name="app_name">Forms</string>
 
     <string name="custom_header_hint_normal">下拉更新</string>
     <string name="custom_header_hint_release">松开更新</string>

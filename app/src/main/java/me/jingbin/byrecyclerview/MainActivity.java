@@ -18,6 +18,7 @@ import java.util.List;
 import me.jingbin.byrecyclerview.activity.AppBarLayoutActivity;
 import me.jingbin.byrecyclerview.activity.HeaderFooterActivity;
 import me.jingbin.byrecyclerview.activity.ItemClickActivity;
+import me.jingbin.byrecyclerview.activity.RecyclerViewActivity;
 import me.jingbin.byrecyclerview.activity.SecondTypeActivity;
 import me.jingbin.byrecyclerview.activity.StateViewActivity;
 import me.jingbin.byrecyclerview.activity.StickyItemActivity;
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
             "万能分割线",
             "item 悬浮置顶",
             "Skeleton 骨架图",
-            "CoordinatorLayout + RecyclerView 使用示例"
+            "CoordinatorLayout + RecyclerView 使用示例",
+            "RecyclerView 使用示例"
     );
     private ActivityMainBinding binding;
 
@@ -96,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
                     case 8:// CoordinatorLayout + RecyclerView 使用示例
                         startActivity(new Intent(MainActivity.this, AppBarLayoutActivity.class));
                         break;
+                    case 9:// RecyclerView 使用示例
+                        startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
+                        break;
                     default:
                         break;
 
@@ -109,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         MenuItem item = menu.findItem(R.id.actionbar_update);
         item.setTitle("当前版本:" + BuildConfig.VERSION_NAME);
-        return true;
+        return false;
     }
 
     @Override

@@ -16,7 +16,7 @@
             android:elevation="3dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:title="ByRecyclerView"
+            app:title="@string/app_name"
             app:titleTextColor="@color/colorWhite" />
 
         <me.jingbin.library.ByRecyclerView
